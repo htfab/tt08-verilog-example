@@ -24,6 +24,9 @@ jobs:
     steps:
       - name: Run Tiny Tapeout Precheck
         uses: TinyTapeout/tt-gds-action/precheck@tt08
+        with:
+          tools-repo: htfab/tt-support-tools
+          tools-ref: tt08-numpy
 
   gl_test:
     needs: gds
